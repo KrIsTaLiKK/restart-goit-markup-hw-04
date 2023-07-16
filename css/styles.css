@@ -313,82 +313,76 @@ body {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-/* =============== ICONS =============== */
+/*======= Icons S0CIAL-MEDIA in Team=========*/
 
-/* Icons team */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .list-icon-member {
+.list-sm-icon {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:24px;
   margin-top: 8px;
+ 
 }
 
-.item-icon-member {
-
+.item-sm-icon {
   width: 40px;
   height: 40px;
   
 }
 
-.item-icon-member:not(:last-child) {
-  margin-right: 24px;
+.link-sm-icon {
+  display: flex;
+  align-items: center;
+  width:100%;
+  height: 100%;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--color-iris);
+ 
 }
 
-.link-icon-member {
+.link-sm-icon:is(:hover, :focus) {
+  background-color: var(--color-green);
+}
+
+
+/* =============== CUSTOMERS icons =============== */
+
+.list-icon-customers {
+  display: flex;
+  justify-content: center;
+  gap:24px;
+}
+
+.item-icon-customer {
+  width: 168px;
+  height: 88px;
+
+}
+
+.link-icon-customer {
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 12px;
-  background-color: var(--color-iris);
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid var(--color-light-slate);
+  
 }
 
-.link-icon-member:is(:hover, :focus) {
-  background-color: var(--color-green);
-} */
+.icon-customer {
+  fill:var(--color-light-slate);
+}
 
-
-/* Icons social-media */
-
-/* .item-sm:not(:last-child) {
-  margin-right: 16px;
+.link-icon-customer:is(:hover, :focus) .icon-customer {
+  fill:var(--color-ocean);
 
 }
 
-.list-sm {
-  margin-top: 16px;
+.link-icon-customer:is(:hover, :focus) {
+  border: 1px solid var(--color-ocean);
+
 }
-
-.link-sm {
-  padding: 8px;
-} */
-
-
-
-
-
-
-
-
-
 
 
 /* =============== FOOTER =============== */
@@ -414,6 +408,8 @@ body {
   margin-right: 0px;
 }
 
+/* ======= SM in FOOTER ========== */
+
 .social-media {
   display: flex;
 }
@@ -422,12 +418,25 @@ body {
   margin-left: 120px;
 }
 
-.text-sm {
+.sm-text {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: var(--color-white);
+
 }
+
+/* Icons SM in Footer */
+
+.list-footer-sm {
+  margin-top: 16px;
+  gap:16px;
+}
+
+.link-footer-sm {
+  padding: 8px;
+}
+
 
 
 /* =============== PORTFOLIO =============== */
@@ -465,6 +474,8 @@ body {
 .filter-btn:is(:hover, :focus) {
   color: var(--color-white);
   background-color: var(--color-ocean);
+  border:none;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .portfolio-list {
@@ -473,7 +484,7 @@ body {
   gap: 48px 24px;
 }
 
-.portfolio-list > .item {
+.portfolio-list > .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
 }
 /* ===== Can use instead gap ===== */
@@ -501,3 +512,14 @@ body {
   border-top: 0;
   background: var(--color-white);
 }
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:is(:hover, :focus) {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
